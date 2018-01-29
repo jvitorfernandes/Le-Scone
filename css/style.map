@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "scss/style.css",
+	"sources": [
+		"scss/style.scss",
+		"scss/_grid.scss"
+	],
+	"sourcesContent": [
+		"// @import 'reset';\n@import 'grid';",
+		"\n//variáveis do grid\n$cols: 12;\n$gutter: 20px;\n$l-device: 1200px;\n$m-device: 760px;\n$s-device: 480px;\n\n//box-sizing\n*, *::after, *::before {\n\tbox-sizing: border-box;\n}\n\n//mixin de media-querie\n@mixin d($size){\n\t@if $size == l {\n\t\t@media screen and (min-width: #{$l-device}){\n\t\t\t@content;\n\t\t}\n\t}\n\t@else if $size == m {\n\t\t@media screen and (min-width: #{$m-device}) and (max-width: #{$l-device} - 1){\n\t\t\t@content;\n\t\t}\n\t}\t\n\n\t@else if $size == s {\n\t\t@media screen and (max-width: #{$m-device}-1){\n\t\t\t@content;\n\t\t}\n\t}\t\n}\n\np {\n\tcolor: blue;\n\t@include d(m){\n\t\tcolor: aqua;\n\t}\n\n\t@include d(s){\n\t\tcolor: pink;\n\t}\n}"
+	],
+	"mappings": ";ACSA,AAAA,CAAC,EAAE,AAAC,CAAA,AAAA,OAAO,EAAE,AAAC,CAAA,AAAA,QAAQ,CAAC;EACtB,UAAU,EAAE,UAAW;CACvB;;;AAsBD,AAAA,CAAC,CAAC;EACD,KAAK,EAAE,IAAK;CAQZ;;AArBC,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,KAAK,OAAO,SAAS,EAAE,MAAM;;EAYtD,AAAA,CAAC,CAAC;IAGA,KAAK,EAAE,IAAK;GAMb;;;AAfC,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,KAAK;;EAM9B,AAAA,CAAC,CAAC;IAOA,KAAK,EAAE,IAAK;GAEb",
+	"names": []
+}
