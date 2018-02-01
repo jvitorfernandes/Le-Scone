@@ -13,7 +13,8 @@ footer{
         float: right;
         @include d(s){
             float: none;
-            margin: 20px 0;
+            margin: 20px auto;
+            text-align: center;
         }
     }
 }

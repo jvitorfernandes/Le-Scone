@@ -30,8 +30,12 @@ p {
 		height: 2px;
 		margin-top: 15px;
 		background: $cinza;
-		@include d(m){
+		@include d(s){
 			width: 60%; 
+            
+		}
+        @include d(m){
+			width: 60%;  
 		}
 	}
 }
